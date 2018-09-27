@@ -9,6 +9,7 @@ class CreateMissingdetails < ActiveRecord::Migration[5.2]
       t.string :glocation , null: false
       t.string :u_id , null: false
       t.string :r_id , default: 0
+      t.string :status
       t.timestamps
     end
   end
