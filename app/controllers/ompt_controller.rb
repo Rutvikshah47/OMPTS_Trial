@@ -46,7 +46,7 @@ skip_before_action :verify_authenticity_token
         require 'uri'
         require 'net/http'
         x=session[:un].to_s.concat("\nYour report has been registered successfully with Email ID: ").concat(session[:ue].to_s).concat(" at Time: ").concat(session[:missingdate]).concat("\nReport ID: ").concat(session[:missingid].to_s)
-        u="http://api.msg91.com/api/sendhttp.php?country=91&sender=MSGIND&route=4&mobiles=".concat(session[:uc].to_s).concat("&authkey=239598Alh5vlVEE5bab62d5&message=Hello! ").concat(x).concat("\nThank You for using OMPTS!.")
+        u="http://api.msg91.com/api/sendhttp.php?country=91&sender=MSGIND&route=4&mobiles=".concat(session[:uc].to_s).concat("&authkey=239714ArDqVtEzChWZ5bac718b&message=Hello! ").concat(x).concat("\nThank You for using OMPTS!.")
         url = URI.encode(u)
 
         http = Net::HTTP.new(URI.parse(url).host,URI.parse(url).port)

@@ -40,7 +40,7 @@ class AdminController < ApplicationController
         require 'uri'
         require 'net/http'
         x=cname.to_s.concat("\nYour report has been ").concat(y).concat("\nReport ID: ").concat(@id.to_s)
-        u="http://api.msg91.com/api/sendhttp.php?country=91&sender=MSGIND&route=4&mobiles=".concat(cno.to_s).concat("&authkey=239598Alh5vlVEE5bab62d5&message=Hello! ").concat(x).concat("\nThank You for using OMPTS!.")
+        u="http://api.msg91.com/api/sendhttp.php?country=91&sender=MSGIND&route=4&mobiles=".concat(cno.to_s).concat("&authkey=239714ArDqVtEzChWZ5bac718b&message=Hello! ").concat(x).concat("\nThank You for using OMPTS!.")
         url = URI.encode(u)
 
         http = Net::HTTP.new(URI.parse(url).host,URI.parse(url).port)
